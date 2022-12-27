@@ -4,110 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>fake statistic maker</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button onclick="saveFile()">Save to .JSON</button>
-    <button onclick="addRow()">Add another row</button>
-    <div class="name" id="name" contenteditable="true">
-        Name
+    <div class="fsmheader">Fake Statistic Maker</div>
+    <div class="whatisfsm">What is FSM? FSM stands for Fake Statistic Maker, it is within no correlation with LCEdit. FSM is a personal project of mine that I have been working on for most of the year, (95% of the year was learning more about html, css, and java.) and I made it for one to test my coding skills, and this is just something I kind of just wanted to do for a while.</div>
+    <br>
+    <div class="whatcanyoudo">
+        FSM is basically an inspect element tool, without the prospect of losing everything once you refresh. (You will lose everything if do you refresh, thats why the Save button exists, and maybe I will get an autosave feature to save your data to the cloud.) FSM will start off with 3 sites, PFR, Statmuse, and Socialblade. There will 100% be more sites coming and you can request some in the website-suggestions for FSM.
     </div>
     <br>
-    <div class="firstmiddlelast" id="firstmiddlelast" contenteditable="true">
-        First Middle Last
+    <div class="pages">
+        Pages
     </div>
-    <div class="Position" contenteditable="true">
-        Position: N/A
+    <div class="linktopfrmodern">
+        <a href="/PFR.html" target="_blank">Pro Football Reference Modern</a>
     </div>
-    <div class="Throws" contenteditable="true">
-        Throws: N/A
-    </div>
-    <div class="YearsPro" contenteditable="true">
-        Years Pro: 0
-    </div>
-    <div class="heightweight" contenteditable="true">
-        0'0, 0 IBS
-    </div>
-    <br>
-    <table id="StatTable">
-        <thead>
-          <tr contenteditable="true">
-            <th>Year</th>
-            <th>Team</th>
-            <th>Age</th>
-            <th>Position</th>
-            <th>GP</th>
-            <th>COMP</th>
-            <th>ATT</th>
-            <th>CMP%</th>
-            <th>QBR</th>
-            <th>Yards</th>
-            <th>Touchdowns</th>
-            <th>Delete Row</th> 
-          </tr>
-        </thead>
-        <tbody>  
-          <tr contenteditable="true">
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td><button onclick="deleteRow(this)">Delete</button></td>
-          </tr>
-        </tbody>  
-      </table>
-      
-      <script src="FileSaver.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
-      <script>
-        function addRow() { 
-          var table = document.getElementById("StatTable");
-      
-          var tbody = table.getElementsByTagName("tbody")[0];
-      
-          var row = tbody.insertRow(-1);
-      
-          var cell1 = row.insertCell(-1);
-          var cell2 = row.insertCell(-1);
-          var cell3 = row.insertCell(-1);
-          var cell4 = row.insertCell(-1);
-          var cell5 = row.insertCell(-1);
-          var cell6 = row.insertCell(-1);
-          var cell7 = row.insertCell(-1);
-          var cell8 = row.insertCell(-1);
-          var cell9 = row.insertCell(-1);
-          var cell10 = row.insertCell(-1);
-          var cell11 = row.insertCell(-1);
-          var cell12 = row.insertCell(-1);
-      
-          cell1.innerHTML = "?";
-          cell2.innerHTML = "?";
-          cell3.innerHTML = "?";
-          cell4.innerHTML = "?";
-          cell5.innerHTML = "?";
-          cell6.innerHTML = "?";
-          cell7.innerHTML = "?";
-          cell8.innerHTML = "?";
-          cell9.innerHTML = "?";
-          cell10.innerHTML = "?";
-          cell11.innerHTML = "?";
-          cell12.innerHTML = '<button onclick="deleteRow(this)">Delete</button>';
-        }
-      </script>
-      <script>
-        function deleteRow(button) {
-          var row = button.parentNode.parentNode;
-      
-          var tbody = row.parentNode;
-      
-          tbody.removeChild(row);
-        }
-      </script>
   </body>

@@ -1,0 +1,37 @@
+@media screen and (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+body{
+    font-family: Bahnschrift;
+    background-color: rgb(17 0 43);
+}
+
+.fsmheader{
+    text-align: center;
+    font-size: 250%;
+    color: white
+}
+
+.whatisfsm{
+    color: white;
+    text-align: center;
+}
+
+.whatcanyoudo{
+    color: white;
+    text-align: center;
+}
+
+.pages{
+    color: white;
+    text-align: center;
+    font-size: 400%;
+}
+
+.linktopfrmodern{
+    text-align: center;
+    color: white
+}
